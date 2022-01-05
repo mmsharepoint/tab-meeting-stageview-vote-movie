@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "id": "ca8fe120-67f8-11ec-b570-cd0ace10f044",
+  "version": "0.0.1",
+  "packageName": "tabmeetingstageviewvotemovie",
+  "developer": {
+    "name": "Markus Moeller",
+    "websiteUrl": "https://9510-2a02-6d40-36c1-5a01-3cfd-c2d7-bad8-d356.ngrok.io",
+    "privacyUrl": "https://9510-2a02-6d40-36c1-5a01-3cfd-c2d7-bad8-d356.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://9510-2a02-6d40-36c1-5a01-3cfd-c2d7-bad8-d356.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "Tab Meeting Vote Movie",
+    "full": "Tab Meeting Vote Movie"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://9510-2a02-6d40-36c1-5a01-3cfd-c2d7-bad8-d356.ngrok.io/voteMovieTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "9510-2a02-6d40-36c1-5a01-3cfd-c2d7-bad8-d356.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}
