@@ -30,6 +30,16 @@
       "scopes": [
         "team",
         "groupchat"
+      ],
+      "context": [
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "meetingStage"
+      ],
+      "meetingSurfaces": [
+        "sidePanel",
+        "stage"
       ]
     }
   ],
