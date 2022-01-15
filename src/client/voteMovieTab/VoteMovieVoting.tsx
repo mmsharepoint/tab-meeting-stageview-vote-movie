@@ -71,42 +71,43 @@ export const VoteMovieVoting: React.FC<IVoteMovieVotingProps> = (props) => {
                     <Header content="Vote for your movie" />
                 </Flex.Item>
                 <Flex.Item>
-                    <div>
-                        <div>
-                            <video ref={video1Ref} controls width={280} height={240}>
+                    <div className="panelSize">
+                        <div className="videoFrame">
+                            <video ref={video1Ref} controls width={260}>
                                 <source src={movie1} type="video/mp4"></source>
                             </video>
                         </div>
+                        {votable &&
                         <div>
-                            <video ref={video2Ref} controls width={280} height={240}>
+                            <Button className="voteBtn" onClick={() => vote(1)}>Vote Movie 1</Button>
+                        </div>}
+                        <div className="videoFrame">
+                            <video ref={video2Ref} controls width={260}>
                                 <source src={movie2}></source>
                             </video>
                         </div>
+                        {votable &&
                         <div>
-                            <video ref={video3Ref} controls width={280} height={240}>
+                            <Button className="voteBtn" onClick={() => vote(1)}>Vote Movie 1</Button>
+                        </div>}
+                        <div className="videoFrame">
+                            <video ref={video3Ref} controls width={260}>
                                 <source src={movie3}></source>
                             </video>
                         </div>
-                        {votable && <div>
-                            <div>
-                                <Button className="voteBtn" onClick={() => vote(1)}>Vote Movie 1</Button>
-                            </div>
-                            <div>
-                                <Button className="voteBtn" onClick={() => vote(2)}>Vote Movie 2</Button>
-                            </div>
-                            <div>
-                                <Button className="voteBtn" onClick={() => vote(3)}>Vote Movie 3</Button>
-                            </div>
-                        </div>}
+                        {votable &&
+                        <div>
+                            <Button className="voteBtn" onClick={() => vote(3)}>Vote Movie 3</Button>
+                        </div>}                        
                     </div>
                 </Flex.Item>
                 <Flex.Item styles={{
                     padding: ".8rem 0 .8rem .5rem"
                 }}>
                     <div>
-                        <Text size="smaller" content={`Votes Movie 1: ${votes?.votes1}`} />
-                        <Text size="smaller" content={`Votes Movie 2: ${votes?.votes2}`} />
-                        <Text size="smaller" content={`Votes Movie 3: ${votes?.votes3}`} />
+                        <span className="votesResult"><Text size="smaller" content={`Votes Movie 1: ${votes?.votes1}`} /></span>
+                        <span className="votesResult"><Text size="smaller" content={`Votes Movie 2: ${votes?.votes2}`} /></span>
+                        <span className="votesResult"><Text size="smaller" content={`Votes Movie 3: ${votes?.votes3}`} /></span>
                     </div>
                 </Flex.Item>
             </Flex>

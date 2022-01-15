@@ -38,6 +38,21 @@ img.logo {
 	min-width: 76px;
 	height: auto;
 }
+.panelSize {
+	width: 280px;
+	h1 {
+		font-size: 1.4em;
+	}
+}
+.videoFrame {
+    width: 260px;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
 .voteBtn {
-	margin-top: 12px;
+	margin-top: 8px;
+	margin-bottom: 12px;
+}
+.votesResult {
+	margin-right: 6px
 }

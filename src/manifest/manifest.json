@@ -28,7 +28,6 @@
       "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/voteMovieTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "canUpdateConfiguration": true,
       "scopes": [
-        "team",
         "groupchat"
       ],
       "context": [
