@@ -65,7 +65,7 @@ export const VoteMovieResults: React.FC<IVoteMovieResultsProps> = (props) => {
                 <Flex.Item>
                     <div>
                         <div>
-                            <video ref={videoRef} controls width={840} height={720} autoPlay>
+                            <video ref={videoRef} width={640} autoPlay>
                                 <source src={votedMovie} type="video/mp4"></source>
                             </video>
                         </div>                    
