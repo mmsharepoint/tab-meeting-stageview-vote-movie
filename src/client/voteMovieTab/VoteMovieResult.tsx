@@ -27,7 +27,7 @@ export const VoteMovieResults: React.FC<IVoteMovieResultsProps> = (props) => {
         const votes1: number = parseInt(votes?.votes1!);
         const votes2: number = parseInt(votes?.votes2!);
         const votes3: number = parseInt(votes?.votes3!);
-        if (votes1 > votes2 && votes1 > votes3) {
+        if (votes1 >= votes2 && votes1 >= votes3) { // If voted equal, show movie 1 per default
             setVotedMovie(movie1!);
         }
         if (votes2 > votes1 && votes2 > votes3) {

@@ -15,8 +15,8 @@
     "full": "Tab Meeting Vote Movie"
   },
   "description": {
-    "short": "TODO: add short description here",
-    "full": "TODO: add full description here"
+    "short": "Meeting app showing voted mivie in stage view.",
+    "full": "Meeting app showing voted mivie in stage view after voted in side panel."
   },
   "icons": {
     "outline": "icon-outline.png",

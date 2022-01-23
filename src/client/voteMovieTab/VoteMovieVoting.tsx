@@ -88,7 +88,7 @@ export const VoteMovieVoting: React.FC<IVoteMovieVotingProps> = (props) => {
                         </div>
                         {votable &&
                         <div>
-                            <Button className="voteBtn" onClick={() => vote(1)}>Vote Movie 1</Button>
+                            <Button className="voteBtn" onClick={() => vote(2)}>Vote Movie 2</Button>
                         </div>}
                         <div className="videoFrame">
                             <video ref={video3Ref} controls width={260}>
