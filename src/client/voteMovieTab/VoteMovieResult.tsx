@@ -36,8 +36,11 @@ export const VoteMovieResults: React.FC<IVoteMovieResultsProps> = (props) => {
         if (votes3 > votes2 && votes3 > votes1) {
             setVotedMovie(movie3!);
         }
-        videoRef.current?.load();
     };
+
+    useEffect(() => {
+        videoRef.current?.load();
+    }, [votedMovie]);
 
     useEffect(() => {
         loadVotes();
