@@ -6,7 +6,19 @@ Teams meeting app showing up in sidePanel and on stageView. Letting users vote f
 
 This sample is a Teams meeting app created using the Teams Yeoman Generator. It's a tab showing up during in-Meeting experience in the sidePanel but also, once shared, in the stageView for all meeting participants.
 
-For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2022/01/)
+Open sidePanel
+
+![OnStageView](assets/02InMeeting_Voting.jpg)
+
+Share onStage view
+
+![OnStageView](assets/04ShareVoteMovieInStageView.jpg)
+
+The onStage view experience
+
+![OnStageView](assets/03WatchMostVotedVideoResult.jpg)
+
+For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2022/05/26/teams-meeting-apps-a-sample-for-in-meeting-experience-and-stageview-vote-movies/)
 
 ## Prerequisites
 
@@ -24,7 +36,7 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|Jan xx, 2022|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
+1.0|Jan 31, 2022|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
 
 ## Disclaimer
 
